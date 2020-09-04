@@ -1,0 +1,18 @@
+﻿<Window x:Class="MarathonSkills.CharityModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarathonSkills"
+        mc:Ignorable="d"
+        Title="CharityModal" Height="300" Width="300">
+    <Grid>
+        <TextBlock x:Name="Name" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Наименование спонсора" VerticalAlignment="Top" Margin="0,10,0,0" FontSize="15" FontWeight="Bold" Width="213"/>
+        <Image Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="93,44,0,0" />
+        <Label Foreground="Black" Margin="10,170,9.6,4.4" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ScrollViewer>
+                <TextBlock x:Name="description" TextWrapping="Wrap"> Должна быть обеспечена возможность просмотра большого количества информации в данном окне."</TextBlock>
+            </ScrollViewer>
+        </Label>
+    </Grid>
+</Window>

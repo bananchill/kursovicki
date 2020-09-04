@@ -1,0 +1,127 @@
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\kusach.exe.config
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\kusach.exe
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\kusach.pdb
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\EntityFramework.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\Google.Protobuf.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\MySql.Data.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\Renci.SshNet.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Buffers.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Memory.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\Zstandard.Net.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\EntityFramework.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\Google.Protobuf.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\MySql.Data.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\Renci.SshNet.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Buffers.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Memory.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.csprojAssemblyReference.cache
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\Login.g.cs
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\App.g.cs
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach_Content.g.cs
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach_MarkupCompile.cache
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach_MarkupCompile.lref
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\Login.baml
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.g.resources
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.Properties.Resources.resources
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.csproj.GenerateResource.cache
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.csproj.CoreCompileInputs.cache
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.csproj.CopyComplete
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.exe
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\kusach.pdb
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\App.baml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\DW.WPFToolkit.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\DW.WPFToolkit.pdb
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\registr.g.cs
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\registr.baml
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\users.g.cs
+C:\Users\макс\Desktop\kusach\kusach\obj\Debug\users.baml
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\макс\Desktop\kusach\kusach\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Login.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\registr.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\App.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach_Content.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach_MarkupCompile.cache
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach_MarkupCompile.lref
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.exe
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.pdb
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\kusach.exe.config
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\kusach.exe
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\kusach.pdb
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\DW.WPFToolkit.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\EntityFramework.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\Google.Protobuf.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\MySql.Data.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\Renci.SshNet.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Buffers.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Memory.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\Zstandard.Net.dll
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\DW.WPFToolkit.pdb
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\EntityFramework.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\Google.Protobuf.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\MySql.Data.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\Renci.SshNet.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Buffers.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Memory.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\App.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Login.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\registr.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.g.resources
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.Properties.Resources.resources
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.csproj.GenerateResource.cache
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.csproj.CoreCompileInputs.cache
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\kusach.csproj.CopyComplete
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\obor.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Director.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Master.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Users.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Manager.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\ZamDirectora.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\obor.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Users.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Director.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Manager.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Master.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\ZamDirectora.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Material.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Material.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Mater.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Mater.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Addzakaz.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\Addzakaz.baml
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\formazeha.g.cs
+C:\Users\макс\Desktop\kusach — копия\kusach\obj\Debug\formazeha.baml

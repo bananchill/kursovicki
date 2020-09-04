@@ -1,0 +1,31 @@
+﻿<Window x:Class="kusach.ZamDirectora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kusach"
+        mc:Ignorable="d"
+        Title="FormZamDirectora" Height="310.066" Width="960.132">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFF1F1F1" Offset="0"/>
+            <GradientStop Color="#FF67B6DA" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid HorizontalAlignment="Left" Width="937" Margin="0,0,0,192">
+        <DataGrid x:Name="DataZakupka" HorizontalAlignment="Left" Margin="10,59,0,-103" Width="400" AutoGeneratingColumn="OnAutoGeneratingColumn" MinColumnWidth="40">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Width="50" Binding="{Binding idzakaz}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Закупки и Составление спецификации" HorizontalAlignment="Left" Margin="105,33,0,0" VerticalAlignment="Top" Width="234"/>
+        <DataGrid x:Name="DataProizv" HorizontalAlignment="Left" Margin="488,59,0,-103" Width="400" AutoGeneratingColumn="OnAutoGeneratingColumn" MinColumnWidth="40">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Width="50" Binding="{Binding idzakaz}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Закупка - Производство" HorizontalAlignment="Left" Margin="612,33,0,0" VerticalAlignment="Top" Width="234"/>
+        <Button Content="На главную" HorizontalAlignment="Left" Height="29" Margin="782,204,0,-147" VerticalAlignment="Top" Width="106" Click="Button_Click_1"/>
+        <Button Content="Учет материалов" HorizontalAlignment="Left" Height="29" Margin="612,204,0,-146" VerticalAlignment="Top" Width="106" Click="Button_Click"/>
+    </Grid>
+</Window>

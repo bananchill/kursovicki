@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bc0d98104bfe4a3fb9a1d2a5b8695c67" Name="Diagram1" ZoomLevel="66">
+        <EntityTypeShape EntityType="tochnokursachModel.furnitura" Width="1.5" PointX="9.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.izdelia" Width="1.5" PointX="8" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.material" Width="1.5" PointX="4.625" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.oborudovanie" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.postavchik" Width="1.5" PointX="0.625" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.specificmater" Width="1.5" PointX="5.875" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.specificoperation" Width="1.5" PointX="3.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.specifikfurniture" Width="1.5" PointX="5.125" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.specifsbor_ed" Width="1.5" PointX="6.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.typeoborud" Width="1.5" PointX="1" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.user" Width="1.5" PointX="11.375" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tochnokursachModel.zakaz" Width="1.5" PointX="10.625" PointY="12.25" IsExpanded="true" />
+        <AssociationConnector Association="tochnokursachModel.fk_furnitura_postavchik1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specifikfurniture_furnitura1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specificmater_izdelia1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specificoperation_izdelia1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specifikfurniture_izdelia1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specifsbor_ed_izdelia" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_zakaz_izdelia1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_material_postavchik1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specificmater_material1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_oborudovanie_typeoborud1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_specificoperation_typeoborud1" ManuallyRouted="false" />
+        <AssociationConnector Association="tochnokursachModel.fk_zakaz_user1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

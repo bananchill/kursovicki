@@ -1,0 +1,52 @@
+﻿<Window x:Class="kusach.Material"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kusach"
+        mc:Ignorable="d"
+        Title="Material" Height="475.771" Width="1236.401" Loaded="Window_Loaded">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFF1F1F1" Offset="0"/>
+            <GradientStop Color="#FF67B6DA" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Height="236" VerticalAlignment="Top">
+        <DataGrid Name="Datamater" HorizontalAlignment="Left" AutoGeneratingColumn="OnAutoGeneratingColumn" Height="215" Margin="22,49,0,-28" VerticalAlignment="Top" Width="493"/>
+        <DataGrid Name="Datafurn" HorizontalAlignment="Left" Height="217" AutoGeneratingColumn="Datafurn_AutoGeneratingColumn" Margin="588,47,0,-28" VerticalAlignment="Top" Width="582"/>
+        <Label Content="Материалы"  HorizontalAlignment="Left" Margin="123,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.529,-0.114"/>
+        <Label Content="Фурнитура" HorizontalAlignment="Left" Margin="869,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.529,-0.114"/>
+        <Button Name="Editm" Content="Редактирование" Click="Editmater" HorizontalAlignment="Left" Margin="417,294,0,-78" VerticalAlignment="Top" Width="98"/>
+        <Button Name="Deletem" Content="Удаление" Click="Deletemater"  HorizontalAlignment="Left" Margin="440,269,0,-53" VerticalAlignment="Top" Width="75"/>
+        <Button Name="Edit" Content="Редактирование"  Click="Editfurn" HorizontalAlignment="Left" Margin="1068,295,0,-79" VerticalAlignment="Top" Width="102" RenderTransformOrigin="1.176,0.2"/>
+        <Button Name="Delete" Content="Удаление" Click="Deletefurn" HorizontalAlignment="Left" Margin="1095,269,0,-53" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="articulbox"  HorizontalAlignment="Left" Height="23" Margin="22,292,0,-79" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="izmerbox"  HorizontalAlignment="Left" Height="23" Margin="22,347,0,-134" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Boxname"  HorizontalAlignment="Left" Height="23" Margin="162,292,0,-79" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="dlinabox"  HorizontalAlignment="Left" Height="23" Margin="162,347,0,-134" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Артикул" HorizontalAlignment="Left" Height="28" Margin="37,266,0,-58" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Label Content="Название" HorizontalAlignment="Left" Height="28" Margin="178,266,0,-58" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Label Content="Измерения" HorizontalAlignment="Left" Height="28" Margin="37,320,0,-112" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Label Content="Длина" HorizontalAlignment="Left" Height="28" Margin="178,320,0,-112" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <TextBox Name="countbox"  HorizontalAlignment="Left" Height="23" Margin="22,396,0,-183" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Количество" HorizontalAlignment="Left" Height="28" Margin="37,368,0,-160" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Button Name="vibor" Content="Выбрать" HorizontalAlignment="Left" Height="20" Margin="347,269,0,-53" VerticalAlignment="Top" Width="88" Click="Vibor_Click"/>
+        <TextBox x:Name="typemater"  HorizontalAlignment="Left" Height="23" Margin="162,397,0,-184" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Тип Материала" HorizontalAlignment="Left" Height="28" Margin="178,370,0,-162" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.03,0.583"/>
+        <Button x:Name="Vibor_furn" Content="Выбрать" HorizontalAlignment="Left" Height="20" Margin="1002,270,0,-54" VerticalAlignment="Top" Width="88" Click="Vibor_furn_Click"/>
+        <TextBox x:Name="furn1"  HorizontalAlignment="Left" Height="23" Margin="597,300,0,-87" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="furn3"  HorizontalAlignment="Left" Height="23" Margin="597,355,0,-142" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="furn2"  HorizontalAlignment="Left" Height="23" Margin="737,300,0,-87" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="furn4"  HorizontalAlignment="Left" Height="23" Margin="737,355,0,-142" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Артикул" HorizontalAlignment="Left" Height="28" Margin="612,274,0,-66" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Label Content="Название" HorizontalAlignment="Left" Height="28" Margin="753,274,0,-66" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Label Content="Измерения" HorizontalAlignment="Left" Height="28" Margin="612,328,0,-120" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <Label Content="Длина" HorizontalAlignment="Left" Height="28" Margin="753,328,0,-120" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <TextBox x:Name="furn6"  HorizontalAlignment="Left" Height="23" Margin="597,404,0,-191" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Height="28" Margin="612,376,0,-168" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.03,0.583"/>
+        <TextBox x:Name="furn5"  HorizontalAlignment="Left" Height="23" Margin="737,405,0,-192" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Тип Материала" HorizontalAlignment="Left" Height="28" Margin="753,378,0,-170" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.03,0.583"/>
+
+    </Grid>
+</Window>

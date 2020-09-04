@@ -1,0 +1,17 @@
+﻿<Window x:Class="MarathonSkills.Contacts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarathonSkills"
+        mc:Ignorable="d"
+        Title="Contacts" Height="300" Width="300">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Контакты" VerticalAlignment="Top" Margin="0,10,0,0" FontSize="15" FontWeight="Bold" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Для получения дополнительной информации, пожалуйта, свяжитесь с нами" VerticalAlignment="Top" Margin="10,75,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Телефон: " VerticalAlignment="Top" Margin="10,130,0,0" RenderTransformOrigin="1.7,0.728" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="+55 11 9988 7766." VerticalAlignment="Top" Margin="70,130,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email: " VerticalAlignment="Top" Margin="10,150,0,0" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="coordinators@marathonskills.org:" VerticalAlignment="Top" Margin="70,150,0,0"/>
+    </Grid>
+</Window>

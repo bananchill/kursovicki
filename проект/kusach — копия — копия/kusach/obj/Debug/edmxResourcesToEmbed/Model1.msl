@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище tochnokursachModelContainer" CdmEntityContainer="tochnokursachEntities">
+    <EntitySetMapping Name="furnitura">
+      <EntityTypeMapping TypeName="tochnokursachModel.furnitura">
+        <MappingFragment StoreEntitySet="furnitura">
+          <ScalarProperty Name="idfurnitura" ColumnName="idfurnitura" />
+          <ScalarProperty Name="articul" ColumnName="articul" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="izmered" ColumnName="izmered" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="izobr" ColumnName="izobr" />
+          <ScalarProperty Name="ves" ColumnName="ves" />
+          <ScalarProperty Name="postavchik_idpostavchik" ColumnName="postavchik_idpostavchik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="izdelia">
+      <EntityTypeMapping TypeName="tochnokursachModel.izdelia">
+        <MappingFragment StoreEntitySet="izdelia">
+          <ScalarProperty Name="idizdelia" ColumnName="idizdelia" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="size" ColumnName="size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="material">
+      <EntityTypeMapping TypeName="tochnokursachModel.material">
+        <MappingFragment StoreEntitySet="material">
+          <ScalarProperty Name="idmaterial" ColumnName="idmaterial" />
+          <ScalarProperty Name="articul" ColumnName="articul" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="izmered" ColumnName="izmered" />
+          <ScalarProperty Name="dlina" ColumnName="dlina" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="typemater" ColumnName="typemater" />
+          <ScalarProperty Name="zakupcost" ColumnName="zakupcost" />
+          <ScalarProperty Name="GOST" ColumnName="GOST" />
+          <ScalarProperty Name="izobr" ColumnName="izobr" />
+          <ScalarProperty Name="haracteristic" ColumnName="haracteristic" />
+          <ScalarProperty Name="postavchik_idpostavchik" ColumnName="postavchik_idpostavchik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oborudovanie">
+      <EntityTypeMapping TypeName="tochnokursachModel.oborudovanie">
+        <MappingFragment StoreEntitySet="oborudovanie">
+          <ScalarProperty Name="idoborudovanie" ColumnName="idoborudovanie" />
+          <ScalarProperty Name="markirovka" ColumnName="markirovka" />
+          <ScalarProperty Name="haracteristic" ColumnName="haracteristic" />
+          <ScalarProperty Name="typeoborud_idtypeoborud" ColumnName="typeoborud_idtypeoborud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="postavchik">
+      <EntityTypeMapping TypeName="tochnokursachModel.postavchik">
+        <MappingFragment StoreEntitySet="postavchik">
+          <ScalarProperty Name="idpostavchik" ColumnName="idpostavchik" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="datedostav" ColumnName="datedostav" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specificmater">
+      <EntityTypeMapping TypeName="tochnokursachModel.specificmater">
+        <MappingFragment StoreEntitySet="specificmater">
+          <ScalarProperty Name="idspecificmater" ColumnName="idspecificmater" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="izdelia_idizdelia" ColumnName="izdelia_idizdelia" />
+          <ScalarProperty Name="material_idmaterial" ColumnName="material_idmaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specificoperation">
+      <EntityTypeMapping TypeName="tochnokursachModel.specificoperation">
+        <MappingFragment StoreEntitySet="specificoperation">
+          <ScalarProperty Name="idspecificoperation" ColumnName="idspecificoperation" />
+          <ScalarProperty Name="operation" ColumnName="operation" />
+          <ScalarProperty Name="timeoper" ColumnName="timeoper" />
+          <ScalarProperty Name="izdelia_idizdelia" ColumnName="izdelia_idizdelia" />
+          <ScalarProperty Name="typeoborud_idtypeoborud" ColumnName="typeoborud_idtypeoborud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specifikfurniture">
+      <EntityTypeMapping TypeName="tochnokursachModel.specifikfurniture">
+        <MappingFragment StoreEntitySet="specifikfurniture">
+          <ScalarProperty Name="idspecifikfurniture" ColumnName="idspecifikfurniture" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="izdelia_idizdelia" ColumnName="izdelia_idizdelia" />
+          <ScalarProperty Name="furnitura_idfurnitura" ColumnName="furnitura_idfurnitura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specifsbor_ed">
+      <EntityTypeMapping TypeName="tochnokursachModel.specifsbor_ed">
+        <MappingFragment StoreEntitySet="specifsbor_ed">
+          <ScalarProperty Name="idspecifsbor_ed" ColumnName="idspecifsbor_ed" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="izdelia_idizdelia" ColumnName="izdelia_idizdelia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typeoborud">
+      <EntityTypeMapping TypeName="tochnokursachModel.typeoborud">
+        <MappingFragment StoreEntitySet="typeoborud">
+          <ScalarProperty Name="idtypeoborud" ColumnName="idtypeoborud" />
+          <ScalarProperty Name="typeoborud1" ColumnName="typeoborud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="tochnokursachModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="iduser" ColumnName="iduser" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="namepat" ColumnName="namepat" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="images" ColumnName="images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zakaz">
+      <EntityTypeMapping TypeName="tochnokursachModel.zakaz">
+        <MappingFragment StoreEntitySet="zakaz">
+          <ScalarProperty Name="idzakaz" ColumnName="idzakaz" />
+          <ScalarProperty Name="datestart" ColumnName="datestart" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="datefinish" ColumnName="datefinish" />
+          <ScalarProperty Name="shemi" ColumnName="shemi" />
+          <ScalarProperty Name="izdelia_idizdelia" ColumnName="izdelia_idizdelia" />
+          <ScalarProperty Name="user_iduser" ColumnName="user_iduser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

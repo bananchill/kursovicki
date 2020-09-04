@@ -1,0 +1,67 @@
+﻿<Page x:Class="MarathonSkills.CheckPointForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonSkills"
+      mc:Ignorable="d" 
+      d:DesignHeight="427" d:DesignWidth="700"
+      Title="CheckPointForm">
+
+    <Grid>
+        <Label Background="{DynamicResource dark_grey}" Content="MARATHON SKILLS 2016" Padding="130,0,0,0" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="700" Height="50" FontWeight="Bold"/>
+        <Button Click="button_back_Click" Content="Назад" HorizontalAlignment="Left" Margin="20,12,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Image Source="/Map/map.png" Margin="0,50,294,0.2" HorizontalAlignment="Right" Width="386" />
+        <Button Margin="0,85,503,0" HorizontalAlignment="Right" Width="46" Click="button_Click_Start1" Height="41" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/start1.png" />
+        </Button>
+        <Button Margin="0,71,431,317.2" HorizontalAlignment="Right" Width="42" Click="button_Click_CheckFirst" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="42" Source="/Map/checkpoint1.png" />
+        </Button>
+        <Button Margin="0,173,389,0" HorizontalAlignment="Right" Width="42" Click="button_Click_CheckSecond" Height="43" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/Map/checkpoint2.png" />
+        </Button>
+        <Button Margin="0,245,402,0" HorizontalAlignment="Right" Width="38" Click="button_Click_CheckThird" Height="35" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/checkpoint3.png" />
+        </Button>
+        <Button Margin="0,325,312,0" HorizontalAlignment="Right" Width="39" Click="button_Click_CheckFourth" Height="38" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/checkpoint4.png" />
+        </Button>
+        <Button Margin="0,375,413,0" HorizontalAlignment="Right" Width="39" Click="button_Click_Start2" Height="42" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/start2.png" />
+        </Button>
+        <Button Margin="0,375,452,0" HorizontalAlignment="Right" Width="39" Click="button_Click_CheckFifth" Height="38" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/checkpoint5.png" />
+        </Button>
+        <Button Margin="0,338,565,0" HorizontalAlignment="Right" Width="39" Click="button_Click_CheckSixth" Height="38" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/checkpoint6.png" />
+        </Button>
+        <Button Margin="0,276,599,0" HorizontalAlignment="Right" Width="39" Click="button_Click_CheckSeventh" Height="38" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/checkpoint7.png" />
+        </Button>
+        <Button Margin="0,211,605,0" HorizontalAlignment="Right" Width="39" Click="button_Click_Start3" Height="42" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/start3.png" />
+        </Button>
+        <Button Margin="0,173,605,0" HorizontalAlignment="Right" Width="39" Click="button_Click_CheckEigth" Height="38" VerticalAlignment="Top" Opacity="0">
+            <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/Map/checkpoint8.png" />
+        </Button>
+        <StackPanel Name="panel1" HorizontalAlignment="Right" Width="263" Margin="0,50,10,14.2">
+            <Image Margin="226,5,0.2,0" Height="32" VerticalAlignment="Top" Source="/Map/exbut.png" />
+            <Button Margin="0,-40,0,0" HorizontalAlignment="Right" Width="39" Click="button_Click_Close" Height="38" Opacity="0"/>
+            <Label Name="labelTitle" Foreground="Black" Content="Name" Margin="0,-30,42,0"/>
+            <Label Name="labelLandmark" Foreground="Black" Content="Описание" Margin="0,0,42,0"/>
+            <Label Name="labelTitle1" Foreground="Black" Content="About" Margin="0,0,42,0"/>
+            <Label Name="labelTitle2" Foreground="Black" Content="Услуги" Margin="0,0,42,0"/>
+            <Image Name="pictureBoxServ1" Height="40" Width="40" Source="/Map/exbut.png" Margin="10,10,184.2,0" />
+            <Label Name="labelServiceName1" Foreground="Black" Content="Services" Margin="70,-40,42.2,0"/>
+            <Image Name="pictureBoxServ2" Height="40" Width="40" Source="/Map/exbut.png" Margin="10,10,184.2,0" />
+            <Label Name="labelServiceName2" Foreground="Black" Content="Services" Margin="70,-40,42.2,0"/>
+            <Image Name="pictureBoxServ3" Height="40" Width="40" Source="/Map/exbut.png" Margin="10,10,184.2,0" />
+            <Label Name="labelServiceName3" Foreground="Black" Content="Services" Margin="70,-40,42.2,0"/>
+            <Image Name="pictureBoxServ4" Height="40" Width="40" Source="/Map/exbut.png" Margin="10,10,184.2,0" />
+            <Label Name="labelServiceName4" Foreground="Black" Content="Services" Margin="70,-40,42.2,0"/>
+            <Image Name="pictureBoxServ5" Height="40" Width="40" Source="/Map/exbut.png" Margin="10,10,184.2,0" />
+            <Label Name="labelServiceName5" Foreground="Black" Content="Services" Margin="70,-40,42.2,0"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tochnokursachModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="furnitura">
+    <Key>
+      <PropertyRef Name="idfurnitura" />
+    </Key>
+    <Property Name="idfurnitura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="articul" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="count" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="izmered" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cost" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="izobr" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="ves" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="postavchik_idpostavchik" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="postavchik" Relationship="Self.fk_furnitura_postavchik1" FromRole="furnitura" ToRole="postavchik" />
+    <NavigationProperty Name="specifikfurniture" Relationship="Self.fk_specifikfurniture_furnitura1" FromRole="furnitura" ToRole="specifikfurniture" />
+  </EntityType>
+  <EntityType Name="izdelia">
+    <Key>
+      <PropertyRef Name="idizdelia" />
+    </Key>
+    <Property Name="idizdelia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="size" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="specificmater" Relationship="Self.fk_specificmater_izdelia1" FromRole="izdelia" ToRole="specificmater" />
+    <NavigationProperty Name="specificoperation" Relationship="Self.fk_specificoperation_izdelia1" FromRole="izdelia" ToRole="specificoperation" />
+    <NavigationProperty Name="specifikfurniture" Relationship="Self.fk_specifikfurniture_izdelia1" FromRole="izdelia" ToRole="specifikfurniture" />
+    <NavigationProperty Name="specifsbor_ed" Relationship="Self.fk_specifsbor_ed_izdelia" FromRole="izdelia" ToRole="specifsbor_ed" />
+    <NavigationProperty Name="zakaz" Relationship="Self.fk_zakaz_izdelia1" FromRole="izdelia" ToRole="zakaz" />
+  </EntityType>
+  <EntityType Name="material">
+    <Key>
+      <PropertyRef Name="idmaterial" />
+    </Key>
+    <Property Name="idmaterial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="articul" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="izmered" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="dlina" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="count" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="typemater" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="zakupcost" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GOST" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="izobr" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="haracteristic" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="postavchik_idpostavchik" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="postavchik" Relationship="Self.fk_material_postavchik1" FromRole="material" ToRole="postavchik" />
+    <NavigationProperty Name="specificmater" Relationship="Self.fk_specificmater_material1" FromRole="material" ToRole="specificmater" />
+  </EntityType>
+  <EntityType Name="oborudovanie">
+    <Key>
+      <PropertyRef Name="idoborudovanie" />
+    </Key>
+    <Property Name="idoborudovanie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="markirovka" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="haracteristic" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="typeoborud_idtypeoborud" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="typeoborud" Relationship="Self.fk_oborudovanie_typeoborud1" FromRole="oborudovanie" ToRole="typeoborud" />
+  </EntityType>
+  <EntityType Name="postavchik">
+    <Key>
+      <PropertyRef Name="idpostavchik" />
+    </Key>
+    <Property Name="idpostavchik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="adress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="datedostav" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="furnitura" Relationship="Self.fk_furnitura_postavchik1" FromRole="postavchik" ToRole="furnitura" />
+    <NavigationProperty Name="material" Relationship="Self.fk_material_postavchik1" FromRole="postavchik" ToRole="material" />
+  </EntityType>
+  <EntityType Name="specificmater">
+    <Key>
+      <PropertyRef Name="idspecificmater" />
+    </Key>
+    <Property Name="idspecificmater" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="count" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="Int32" Nullable="false" />
+    <Property Name="material_idmaterial" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="izdelia" Relationship="Self.fk_specificmater_izdelia1" FromRole="specificmater" ToRole="izdelia" />
+    <NavigationProperty Name="material" Relationship="Self.fk_specificmater_material1" FromRole="specificmater" ToRole="material" />
+  </EntityType>
+  <EntityType Name="specificoperation">
+    <Key>
+      <PropertyRef Name="idspecificoperation" />
+    </Key>
+    <Property Name="idspecificoperation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="operation" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="timeoper" Type="Time" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="Int32" Nullable="false" />
+    <Property Name="typeoborud_idtypeoborud" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="izdelia" Relationship="Self.fk_specificoperation_izdelia1" FromRole="specificoperation" ToRole="izdelia" />
+    <NavigationProperty Name="typeoborud" Relationship="Self.fk_specificoperation_typeoborud1" FromRole="specificoperation" ToRole="typeoborud" />
+  </EntityType>
+  <EntityType Name="specifikfurniture">
+    <Key>
+      <PropertyRef Name="idspecifikfurniture" />
+    </Key>
+    <Property Name="idspecifikfurniture" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="count" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="Int32" Nullable="false" />
+    <Property Name="furnitura_idfurnitura" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="furnitura" Relationship="Self.fk_specifikfurniture_furnitura1" FromRole="specifikfurniture" ToRole="furnitura" />
+    <NavigationProperty Name="izdelia" Relationship="Self.fk_specifikfurniture_izdelia1" FromRole="specifikfurniture" ToRole="izdelia" />
+  </EntityType>
+  <EntityType Name="specifsbor_ed">
+    <Key>
+      <PropertyRef Name="idspecifsbor_ed" />
+    </Key>
+    <Property Name="idspecifsbor_ed" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="count" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="izdelia" Relationship="Self.fk_specifsbor_ed_izdelia" FromRole="specifsbor_ed" ToRole="izdelia" />
+  </EntityType>
+  <EntityType Name="typeoborud">
+    <Key>
+      <PropertyRef Name="idtypeoborud" />
+    </Key>
+    <Property Name="idtypeoborud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="typeoborud1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="oborudovanie" Relationship="Self.fk_oborudovanie_typeoborud1" FromRole="typeoborud" ToRole="oborudovanie" />
+    <NavigationProperty Name="specificoperation" Relationship="Self.fk_specificoperation_typeoborud1" FromRole="typeoborud" ToRole="specificoperation" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lastname" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="namepat" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="images" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="zakaz" Relationship="Self.fk_zakaz_user1" FromRole="user" ToRole="zakaz" />
+  </EntityType>
+  <EntityType Name="zakaz">
+    <Key>
+      <PropertyRef Name="idzakaz" />
+    </Key>
+    <Property Name="idzakaz" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="datestart" Type="DateTime" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cost" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datefinish" Type="DateTime" />
+    <Property Name="shemi" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="izdelia_idizdelia" Type="Int32" Nullable="false" />
+    <Property Name="user_iduser" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="izdelia" Relationship="Self.fk_zakaz_izdelia1" FromRole="zakaz" ToRole="izdelia" />
+    <NavigationProperty Name="user" Relationship="Self.fk_zakaz_user1" FromRole="zakaz" ToRole="user" />
+  </EntityType>
+  <Association Name="fk_furnitura_postavchik1">
+    <End Role="postavchik" Type="Self.postavchik" Multiplicity="1" />
+    <End Role="furnitura" Type="Self.furnitura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="postavchik">
+        <PropertyRef Name="idpostavchik" />
+      </Principal>
+      <Dependent Role="furnitura">
+        <PropertyRef Name="postavchik_idpostavchik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specifikfurniture_furnitura1">
+    <End Role="furnitura" Type="Self.furnitura" Multiplicity="1" />
+    <End Role="specifikfurniture" Type="Self.specifikfurniture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="furnitura">
+        <PropertyRef Name="idfurnitura" />
+      </Principal>
+      <Dependent Role="specifikfurniture">
+        <PropertyRef Name="furnitura_idfurnitura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificmater_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specificmater" Type="Self.specificmater" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specificmater">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificoperation_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specificoperation" Type="Self.specificoperation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specificoperation">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specifikfurniture_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specifikfurniture" Type="Self.specifikfurniture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specifikfurniture">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specifsbor_ed_izdelia">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specifsbor_ed" Type="Self.specifsbor_ed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specifsbor_ed">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zakaz_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="zakaz" Type="Self.zakaz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="zakaz">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_material_postavchik1">
+    <End Role="postavchik" Type="Self.postavchik" Multiplicity="1" />
+    <End Role="material" Type="Self.material" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="postavchik">
+        <PropertyRef Name="idpostavchik" />
+      </Principal>
+      <Dependent Role="material">
+        <PropertyRef Name="postavchik_idpostavchik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificmater_material1">
+    <End Role="material" Type="Self.material" Multiplicity="1" />
+    <End Role="specificmater" Type="Self.specificmater" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="material">
+        <PropertyRef Name="idmaterial" />
+      </Principal>
+      <Dependent Role="specificmater">
+        <PropertyRef Name="material_idmaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_oborudovanie_typeoborud1">
+    <End Role="typeoborud" Type="Self.typeoborud" Multiplicity="1" />
+    <End Role="oborudovanie" Type="Self.oborudovanie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeoborud">
+        <PropertyRef Name="idtypeoborud" />
+      </Principal>
+      <Dependent Role="oborudovanie">
+        <PropertyRef Name="typeoborud_idtypeoborud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificoperation_typeoborud1">
+    <End Role="typeoborud" Type="Self.typeoborud" Multiplicity="1" />
+    <End Role="specificoperation" Type="Self.specificoperation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeoborud">
+        <PropertyRef Name="idtypeoborud" />
+      </Principal>
+      <Dependent Role="specificoperation">
+        <PropertyRef Name="typeoborud_idtypeoborud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zakaz_user1">
+    <End Role="user" Type="Self.user" Multiplicity="1" />
+    <End Role="zakaz" Type="Self.zakaz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="iduser" />
+      </Principal>
+      <Dependent Role="zakaz">
+        <PropertyRef Name="user_iduser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="tochnokursachEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="furnitura" EntityType="Self.furnitura" />
+    <EntitySet Name="izdelia" EntityType="Self.izdelia" />
+    <EntitySet Name="material" EntityType="Self.material" />
+    <EntitySet Name="oborudovanie" EntityType="Self.oborudovanie" />
+    <EntitySet Name="postavchik" EntityType="Self.postavchik" />
+    <EntitySet Name="specificmater" EntityType="Self.specificmater" />
+    <EntitySet Name="specificoperation" EntityType="Self.specificoperation" />
+    <EntitySet Name="specifikfurniture" EntityType="Self.specifikfurniture" />
+    <EntitySet Name="specifsbor_ed" EntityType="Self.specifsbor_ed" />
+    <EntitySet Name="typeoborud" EntityType="Self.typeoborud" />
+    <EntitySet Name="user" EntityType="Self.user" />
+    <EntitySet Name="zakaz" EntityType="Self.zakaz" />
+    <AssociationSet Name="fk_furnitura_postavchik1" Association="Self.fk_furnitura_postavchik1">
+      <End Role="postavchik" EntitySet="postavchik" />
+      <End Role="furnitura" EntitySet="furnitura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specifikfurniture_furnitura1" Association="Self.fk_specifikfurniture_furnitura1">
+      <End Role="furnitura" EntitySet="furnitura" />
+      <End Role="specifikfurniture" EntitySet="specifikfurniture" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificmater_izdelia1" Association="Self.fk_specificmater_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specificmater" EntitySet="specificmater" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificoperation_izdelia1" Association="Self.fk_specificoperation_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specificoperation" EntitySet="specificoperation" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specifikfurniture_izdelia1" Association="Self.fk_specifikfurniture_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specifikfurniture" EntitySet="specifikfurniture" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specifsbor_ed_izdelia" Association="Self.fk_specifsbor_ed_izdelia">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specifsbor_ed" EntitySet="specifsbor_ed" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zakaz_izdelia1" Association="Self.fk_zakaz_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="zakaz" EntitySet="zakaz" />
+    </AssociationSet>
+    <AssociationSet Name="fk_material_postavchik1" Association="Self.fk_material_postavchik1">
+      <End Role="postavchik" EntitySet="postavchik" />
+      <End Role="material" EntitySet="material" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificmater_material1" Association="Self.fk_specificmater_material1">
+      <End Role="material" EntitySet="material" />
+      <End Role="specificmater" EntitySet="specificmater" />
+    </AssociationSet>
+    <AssociationSet Name="fk_oborudovanie_typeoborud1" Association="Self.fk_oborudovanie_typeoborud1">
+      <End Role="typeoborud" EntitySet="typeoborud" />
+      <End Role="oborudovanie" EntitySet="oborudovanie" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificoperation_typeoborud1" Association="Self.fk_specificoperation_typeoborud1">
+      <End Role="typeoborud" EntitySet="typeoborud" />
+      <End Role="specificoperation" EntitySet="specificoperation" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zakaz_user1" Association="Self.fk_zakaz_user1">
+      <End Role="user" EntitySet="user" />
+      <End Role="zakaz" EntitySet="zakaz" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

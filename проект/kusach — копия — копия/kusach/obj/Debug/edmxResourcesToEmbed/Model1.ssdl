@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище tochnokursachModel" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="furnitura">
+    <Key>
+      <PropertyRef Name="idfurnitura" />
+    </Key>
+    <Property Name="idfurnitura" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="articul" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="count" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="izmered" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="cost" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="izobr" Type="varchar" MaxLength="45" />
+    <Property Name="ves" Type="varchar" MaxLength="45" />
+    <Property Name="postavchik_idpostavchik" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="izdelia">
+    <Key>
+      <PropertyRef Name="idizdelia" />
+    </Key>
+    <Property Name="idizdelia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="size" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="material">
+    <Key>
+      <PropertyRef Name="idmaterial" />
+    </Key>
+    <Property Name="idmaterial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="articul" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="izmered" Type="varchar" MaxLength="45" />
+    <Property Name="dlina" Type="varchar" MaxLength="45" />
+    <Property Name="count" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="typemater" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="zakupcost" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="GOST" Type="varchar" MaxLength="45" />
+    <Property Name="izobr" Type="varchar" MaxLength="45" />
+    <Property Name="haracteristic" Type="varchar" MaxLength="45" />
+    <Property Name="postavchik_idpostavchik" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="oborudovanie">
+    <Key>
+      <PropertyRef Name="idoborudovanie" />
+    </Key>
+    <Property Name="idoborudovanie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="markirovka" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="haracteristic" Type="varchar" MaxLength="45" />
+    <Property Name="typeoborud_idtypeoborud" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="postavchik">
+    <Key>
+      <PropertyRef Name="idpostavchik" />
+    </Key>
+    <Property Name="idpostavchik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="adress" Type="varchar" MaxLength="45" />
+    <Property Name="datedostav" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="specificmater">
+    <Key>
+      <PropertyRef Name="idspecificmater" />
+    </Key>
+    <Property Name="idspecificmater" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="count" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="int" Nullable="false" />
+    <Property Name="material_idmaterial" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="specificoperation">
+    <Key>
+      <PropertyRef Name="idspecificoperation" />
+    </Key>
+    <Property Name="idspecificoperation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="operation" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="timeoper" Type="time" Precision="0" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="int" Nullable="false" />
+    <Property Name="typeoborud_idtypeoborud" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="specifikfurniture">
+    <Key>
+      <PropertyRef Name="idspecifikfurniture" />
+    </Key>
+    <Property Name="idspecifikfurniture" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="count" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="int" Nullable="false" />
+    <Property Name="furnitura_idfurnitura" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="specifsbor_ed">
+    <Key>
+      <PropertyRef Name="idspecifsbor_ed" />
+    </Key>
+    <Property Name="idspecifsbor_ed" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="count" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="izdelia_idizdelia" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="typeoborud">
+    <Key>
+      <PropertyRef Name="idtypeoborud" />
+    </Key>
+    <Property Name="idtypeoborud" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="typeoborud" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lastname" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="namepat" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="role" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="images" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="zakaz">
+    <Key>
+      <PropertyRef Name="idzakaz" />
+    </Key>
+    <Property Name="idzakaz" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datestart" Type="date" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="cost" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="datefinish" Type="date" />
+    <Property Name="shemi" Type="varchar" MaxLength="45" />
+    <Property Name="izdelia_idizdelia" Type="int" Nullable="false" />
+    <Property Name="user_iduser" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_furnitura_postavchik1">
+    <End Role="postavchik" Type="Self.postavchik" Multiplicity="1" />
+    <End Role="furnitura" Type="Self.furnitura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="postavchik">
+        <PropertyRef Name="idpostavchik" />
+      </Principal>
+      <Dependent Role="furnitura">
+        <PropertyRef Name="postavchik_idpostavchik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_material_postavchik1">
+    <End Role="postavchik" Type="Self.postavchik" Multiplicity="1" />
+    <End Role="material" Type="Self.material" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="postavchik">
+        <PropertyRef Name="idpostavchik" />
+      </Principal>
+      <Dependent Role="material">
+        <PropertyRef Name="postavchik_idpostavchik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_oborudovanie_typeoborud1">
+    <End Role="typeoborud" Type="Self.typeoborud" Multiplicity="1" />
+    <End Role="oborudovanie" Type="Self.oborudovanie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeoborud">
+        <PropertyRef Name="idtypeoborud" />
+      </Principal>
+      <Dependent Role="oborudovanie">
+        <PropertyRef Name="typeoborud_idtypeoborud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificmater_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specificmater" Type="Self.specificmater" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specificmater">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificmater_material1">
+    <End Role="material" Type="Self.material" Multiplicity="1" />
+    <End Role="specificmater" Type="Self.specificmater" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="material">
+        <PropertyRef Name="idmaterial" />
+      </Principal>
+      <Dependent Role="specificmater">
+        <PropertyRef Name="material_idmaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificoperation_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specificoperation" Type="Self.specificoperation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specificoperation">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specificoperation_typeoborud1">
+    <End Role="typeoborud" Type="Self.typeoborud" Multiplicity="1" />
+    <End Role="specificoperation" Type="Self.specificoperation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeoborud">
+        <PropertyRef Name="idtypeoborud" />
+      </Principal>
+      <Dependent Role="specificoperation">
+        <PropertyRef Name="typeoborud_idtypeoborud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specifikfurniture_furnitura1">
+    <End Role="furnitura" Type="Self.furnitura" Multiplicity="1" />
+    <End Role="specifikfurniture" Type="Self.specifikfurniture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="furnitura">
+        <PropertyRef Name="idfurnitura" />
+      </Principal>
+      <Dependent Role="specifikfurniture">
+        <PropertyRef Name="furnitura_idfurnitura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specifikfurniture_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specifikfurniture" Type="Self.specifikfurniture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specifikfurniture">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_specifsbor_ed_izdelia">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="specifsbor_ed" Type="Self.specifsbor_ed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="specifsbor_ed">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zakaz_izdelia1">
+    <End Role="izdelia" Type="Self.izdelia" Multiplicity="1" />
+    <End Role="zakaz" Type="Self.zakaz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="izdelia">
+        <PropertyRef Name="idizdelia" />
+      </Principal>
+      <Dependent Role="zakaz">
+        <PropertyRef Name="izdelia_idizdelia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zakaz_user1">
+    <End Role="user" Type="Self.user" Multiplicity="1" />
+    <End Role="zakaz" Type="Self.zakaz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="iduser" />
+      </Principal>
+      <Dependent Role="zakaz">
+        <PropertyRef Name="user_iduser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище tochnokursachModelContainer">
+    <EntitySet Name="furnitura" EntityType="Self.furnitura" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="izdelia" EntityType="Self.izdelia" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="material" EntityType="Self.material" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="oborudovanie" EntityType="Self.oborudovanie" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="postavchik" EntityType="Self.postavchik" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="specificmater" EntityType="Self.specificmater" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="specificoperation" EntityType="Self.specificoperation" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="specifikfurniture" EntityType="Self.specifikfurniture" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="specifsbor_ed" EntityType="Self.specifsbor_ed" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="typeoborud" EntityType="Self.typeoborud" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="tochnokursach" store:Type="Tables" />
+    <EntitySet Name="zakaz" EntityType="Self.zakaz" Schema="tochnokursach" store:Type="Tables" />
+    <AssociationSet Name="fk_furnitura_postavchik1" Association="Self.fk_furnitura_postavchik1">
+      <End Role="postavchik" EntitySet="postavchik" />
+      <End Role="furnitura" EntitySet="furnitura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_material_postavchik1" Association="Self.fk_material_postavchik1">
+      <End Role="postavchik" EntitySet="postavchik" />
+      <End Role="material" EntitySet="material" />
+    </AssociationSet>
+    <AssociationSet Name="fk_oborudovanie_typeoborud1" Association="Self.fk_oborudovanie_typeoborud1">
+      <End Role="typeoborud" EntitySet="typeoborud" />
+      <End Role="oborudovanie" EntitySet="oborudovanie" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificmater_izdelia1" Association="Self.fk_specificmater_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specificmater" EntitySet="specificmater" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificmater_material1" Association="Self.fk_specificmater_material1">
+      <End Role="material" EntitySet="material" />
+      <End Role="specificmater" EntitySet="specificmater" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificoperation_izdelia1" Association="Self.fk_specificoperation_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specificoperation" EntitySet="specificoperation" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specificoperation_typeoborud1" Association="Self.fk_specificoperation_typeoborud1">
+      <End Role="typeoborud" EntitySet="typeoborud" />
+      <End Role="specificoperation" EntitySet="specificoperation" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specifikfurniture_furnitura1" Association="Self.fk_specifikfurniture_furnitura1">
+      <End Role="furnitura" EntitySet="furnitura" />
+      <End Role="specifikfurniture" EntitySet="specifikfurniture" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specifikfurniture_izdelia1" Association="Self.fk_specifikfurniture_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specifikfurniture" EntitySet="specifikfurniture" />
+    </AssociationSet>
+    <AssociationSet Name="fk_specifsbor_ed_izdelia" Association="Self.fk_specifsbor_ed_izdelia">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="specifsbor_ed" EntitySet="specifsbor_ed" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zakaz_izdelia1" Association="Self.fk_zakaz_izdelia1">
+      <End Role="izdelia" EntitySet="izdelia" />
+      <End Role="zakaz" EntitySet="zakaz" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zakaz_user1" Association="Self.fk_zakaz_user1">
+      <End Role="user" EntitySet="user" />
+      <End Role="zakaz" EntitySet="zakaz" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
